@@ -540,7 +540,7 @@ end
 
 //out valid
 always @(*) begin
-    if(state == ENCODE && cnt >= 2) out_valid_next = 1;
+    if(state_next == ENCODE && cnt >= 2) out_valid_next = 1;
     else out_valid_next = 0;
 end
 //state_next
