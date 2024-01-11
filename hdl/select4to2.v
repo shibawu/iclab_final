@@ -1,16 +1,14 @@
 module select4to2 (
-  input rst_n,
-  input clk,
   input [10:0]input0,
   input [10:0]input1,
   input [10:0]input2,
   input [10:0]input3,
-  input [6:0] input_addr0,
-  input [6:0] input_addr1,
-  input [6:0] input_addr2,
-  input [6:0] input_addr3,
-  output reg [7:0] min1_addr,
-  output reg [7:0] min2_addr,
+  input [6-1:0] input_addr0,
+  input [6-1:0] input_addr1,
+  input [6-1:0] input_addr2,
+  input [6-1:0] input_addr3,
+  output reg [7-1:0] min1_addr,
+  output reg [7-1:0] min2_addr,
   output reg [10:0] min1,
   output reg [10:0] min2
 );

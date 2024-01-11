@@ -1,7 +1,6 @@
 module huffman_DC(
     input clk,
     input rst_n,
-    input enable,
     input signed [11-1:0] DC,
 
     output reg [5-1:0] code_length,
